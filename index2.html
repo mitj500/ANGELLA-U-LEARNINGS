@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cafe Management System</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <!-- Add Tailwind CSS CDN link -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #eeddbb;
+      color: #5d5344;
+    }
+
+    header {
+      background-color: #5d5344;
+    }
+
+    header a {
+      color: #eeddbb;
+    }
+
+    #home {
+      background-color: #5d5344;
+    }
+
+    #home h1,
+    #home p {
+      color: #eeddbb;
+    }
+
+    #about {
+      background-color: #eeddbb;
+    }
+
+    #about h2 {
+      color: #5d5344;
+    }
+
+    #menu {
+      background-color: #d8c3a2;
+    }
+
+    #menu h2 {
+      color: #5d5344;
+    }
+
+    .menu-item {
+      background-color: #eeddbb;
+      color: #5d5344;
+    }
+
+    .menu-item h3 {
+      color: #5d5344;
+    }
+
+    .menu-item p,
+    .menu-item span {
+      color: #7c6f5d;
+    }
+
+    #reservations {
+      background-color: #eeddbb;
+    }
+
+    #reservations h2 {
+      color: #5d5344;
+    }
+
+    #reservations input[type="submit"] {
+      background-color: #5d5344;
+      color: #eeddbb;
+    }
+
+    #events {
+      background-color: #d8c3a2;
+    }
+
+    #events h2 {
+      color: #5d5344;
+    }
+
+    #contact {
+      background-color: #eeddbb;
+    }
+
+    #contact h2 {
+      color: #5d5344;
+    }
+
+    footer {
+      background-color: #5d5344;
+      color: #eeddbb;
+    }
+  </style>
+</head>
+<body>
+  <header class="bg-brown-800 py-4">
+    <nav class="container mx-auto">
+      <ul class="flex justify-center">
+        <li class="mx-4"><a href="#home" class="text-brown-200 hover:text-brown-300">Home</a></li>
+        <li class="mx-4"><a href="#about" class="text-brown-200 hover:text-brown-300">About Us</a></li>
+        <li class="mx-4"><a href="#menu" class="text-brown-200 hover:text-brown-300">Menu</a></li>
+        <li class="mx-4"><a href="#reservations" class="text-brown-200 hover:text-brown-300">Reservations</a></li>
+        <li class="mx-4"><a href="#events" class="text-brown-200 hover:text-brown-300">Events</a></li>
+        <li class="mx-4"><a href="#contact" class="text-brown-200 hover:text-brown-300">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home" class="bg-brown-600 py-24">
+    <div class="text-center">
+      <h1 class="text-4xl md:text-6xl font-bold text-brown-100 mb-4">Welcome to Cafe Management System</h1>
+      <p class="text-lg text-brown-200">Discover our delicious menu and book your table online!</p>
+    </div>
+  </section>
+
+  <section id="about" class="bg-brown-200 py-12">
+    <div class="container mx-auto text-center">
+      <h2 class="text-3xl md:text-4xl font-bold text-brown-800 mb-4">About Us</h2>
+      <p class="text-lg text-brown-700">Provide information about your cafe, its history, and unique features.</p>
+    </div>
+  </section>
+
+  <section id="menu" class="py-12">
+    <div class="container mx-auto text-center">
+      <h2 class="text-3xl md:text-4xl font-bold text-brown-800 mb-4">Menu</h2>
+      <div class="flex flex-wrap justify-center">
+        <div class="bg-brown-300 shadow-lg rounded-lg p-6 m-4 max-w-sm">
+          <h3 class="text-xl font-bold text-brown-800 mb-2">Item 1</h3>
+          <p class="text-gray-600 mb-4">Description of item 1</p>
+          <span class="text-lg font-bold text-brown-800">Price: $10</span>
+        </div>
+        <div class="bg-brown-300 shadow-lg rounded-lg p-6 m-4 max-w-sm">
+          <h3 class="text-xl font-bold text-brown-800 mb-2">Item 2</h3>
+          <p class="text-gray-600 mb-4">Description of item 2</p>
+          <span class="text-lg font-bold text-brown-800">Price: $12</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="reservations" class="bg-brown-200 py-12">
+    <div class="container mx-auto text-center">
+      <h2 class="text-3xl md:text-4xl font-bold text-brown-800 mb-4">Reservations</h2>
+      <form class="max-w-md mx-auto">
+        <label class="block mb-4">
+          Date:
+          <input type="date" name="date" class="border border-brown-300 rounded-md p-2 w-full">
+        </label>
+        <label class="block mb-4">
+          Time:
+          <input type="time" name="time" class="border border-brown-300 rounded-md p-2 w-full">
+        </label>
+        <label class="block mb-4">
+          Number of Guests:
+          <input type="number" name="guests" min="1" class="border border-brown-300 rounded-md p-2 w-full">
+        </label>
+        <input type="submit" value="Book Now" class="bg-brown-800 text-brown-100 py-2 px-4 rounded-md">
+      </form>
+    </div>
+  </section>
+
+  <section id="events" class="py-12">
+    <div class="container mx-auto text-center">
+      <h2 class="text-3xl md:text-4xl font-bold text-brown-800 mb-4">Events</h2>
+      <p class="text-lg text-brown-700">Provide information about upcoming events and allow users to book them.</p>
+    </div>
+  </section>
+
+  <section id="contact" class="bg-brown-200 py-12">
+    <div class="container mx-auto text-center">
+      <h2 class="text-3xl md:text-4xl font-bold text-brown-800 mb-4">Contact Us</h2>
+      <p class="text-lg text-brown-700">Include contact information and a contact form for inquiries.</p>
+    </div>
+  </section>
+
+  <footer class="bg-brown-800 text-brown-100 py-4 text-center">
+    <p>&copy; 2023 Cafe Management System. All rights reserved.</p>
+  </footer>
+</body>
+</html>

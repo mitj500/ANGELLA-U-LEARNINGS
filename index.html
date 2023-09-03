@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cafe Management System</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <style>
+    /* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Set body font and background */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f1e8;
+  color: #333;
+}
+
+/* Header styles */
+header {
+  background-color: #3d1c02;
+  padding: 10px;
+  color: #fff;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 10px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Hero section styles */
+#home {
+  background-image: url('hero-image.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+}
+
+#home h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+#home p {
+  font-size: 24px;
+  margin-bottom: 40px;
+}
+
+/* About section styles */
+#about {
+  padding: 50px;
+  background-color: #efe1d1;
+}
+
+#about h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+#about p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 40px;
+}
+
+/* Menu section styles */
+#menu {
+  padding: 50px;
+  background-color: #d4b7a6;
+}
+
+#menu h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #3d1c02;
+}
+
+.menu-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.menu-item {
+  width: 45%;
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.menu-item:hover {
+  transform: scale(1.02);
+}
+
+.menu-item h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #3d1c02;
+}
+
+.menu-item p {
+  font-size: 18px;
+  color: #888;
+  margin-bottom: 10px;
+}
+
+.menu-item span {
+  font-size: 20px;
+  color: #3d1c02;
+  font-weight: bold;
+}
+
+/* Reservations section styles */
+#reservations {
+  padding: 50px;
+  background-color: #efe1d1;
+}
+
+#reservations h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #3d1c02;
+}
+
+#reservations form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+#reservations label {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #3d1c02;
+}
+
+#reservations input[type="date"],
+#reservations input[type="time"],
+#reservations input[type="number"] {
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+#reservations input[type="submit"] {
+  padding: 10px 20px;
+  background-color: #3d1c02;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+/* Events section styles */
+#events {
+  padding: 50px;
+  background-color: #d4b7a6;
+}
+
+#events h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #3d1c02;
+}
+
+#events p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 40px;
+}
+
+/* Contact section styles */
+#contact {
+  padding: 50px;
+  background-color: #efe1d1;
+}
+
+#contact h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #3d1c02;
+}
+
+#contact p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 40px;
+}
+
+/* Footer styles */
+footer {
+  background-color: #3d1c02;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  font-size: 14px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .menu-item {
+    width: 100%;
+  }
+}
+
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#reservations">Reservations</a></li>
+        <li><a href="#events">Events</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home">
+    <h1>Welcome to Cafe Management System</h1>
+    <p>Discover our delicious menu and book your table online!</p>
+  </section>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p>Provide information about your cafe, its history, and unique features.</p>
+  </section>
+
+  <section id="menu">
+    <h2>Menu</h2>
+    <div class="menu-items">
+      <div class="menu-item">
+        <h3>Item 1</h3>
+        <p>Description of item 1</p>
+        <span>Price: $10</span>
+      </div>
+      <div class="menu-item">
+        <h3>Item 2</h3>
+        <p>Description of item 2</p>
+        <span>Price: $12</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="reservations">
+    <h2>Reservations</h2>
+    <form>
+      <label for="date">Date:</label>
+      <input type="date" id="date" name="date">
+      <label for="time">Time:</label>
+      <input type="time" id="time" name="time">
+      <label for="guests">Number of Guests:</label>
+      <input type="number" id="guests" name="guests" min="1">
+      <input type="submit" value="Book Now">
+    </form>
+  </section>
+
+  <section id="events">
+    <h2>Events</h2>
+    <p>Provide information about upcoming events and allow users to book them.</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Include contact information and a contact form for inquiries.</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2023 Cafe Management System. All rights reserved.</p>
+  </footer>
+</body>
+</html>
